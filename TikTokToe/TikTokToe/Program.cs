@@ -8,7 +8,7 @@ namespace TikTokToe
         {
             Console.WriteLine("Hello World!");
             Game obj = new Game();
-            obj.tik();
+            obj.chooseoption();
         }
     }
 }
