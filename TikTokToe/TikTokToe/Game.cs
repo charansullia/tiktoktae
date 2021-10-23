@@ -8,19 +8,15 @@ namespace TikTokToe
     {
         public char player;
         public char computer;
-        //public char[] gameboard = new char[10,10];
-        //public void tik()
-        //{
-        //    Console.WriteLine("A B C\n");
-        //    for(int i=0;i<10;i++)
-        //    {
-        //        for (int j = 0; j < 10; j++)
-        //        {
-        //            Console.Write("|" + gameboard[i, j]);
-        //        }
-        //        Console.Write("\n\n");
-        //    }
-        //}
+        public char[] gameboard = new char[10];
+        public void tik()
+        {
+          for(int i=0;i<10;i++)
+            {
+                gameboard[i] = ' ';
+            }
+            
+        }
         public void chooseoption()
         {
             Console.WriteLine("enter option X or Y");
@@ -37,6 +33,15 @@ namespace TikTokToe
                     Console.WriteLine("invalid option");
                     break;
             }
+        }
+        public void showboard()
+        {
+            Console.WriteLine(" "+gameboard[0]+"|\t"+ " "+gameboard[1]+"|\t"+gameboard[2]);
+            Console.WriteLine("-------------------------------");
+            Console.WriteLine(" " + gameboard[3] + "|\t" + " " + gameboard[4] + "|\t" + gameboard[5]);
+            Console.WriteLine("-------------------------------");
+            Console.WriteLine(" " + gameboard[6] + "|\t" + " " + gameboard[7] + "|\t" + gameboard[8]);
+            Console.WriteLine("-------------------------------");
         }
 
 
